@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>AUrlHelper</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Goncharenko Denis</Authors>
+    <Title>AUrlHelper</Title>
+    <Description>C# util for getting file or folder name from path when we work with a cloud storages.</Description>
+    <Copyright>Copyright 2020</Copyright>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageTags>foldername filename cloudstorages s3 azure dropbox googledrive</PackageTags>
+    <RepositoryUrl>https://github.com/denis-goncharenko/AUrlHelper</RepositoryUrl>
+  </PropertyGroup>
+
+</Project>
