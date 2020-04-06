@@ -14,9 +14,11 @@ namespace AUrlHelper
         /// <param name="path"></param>
         /// <returns>File name</returns>
         /// <exception cref="ArgumentException">Throw if path doesn't contain a file</exception>
+        /// <exception cref="UriFormatException">Throw if path is not a url</exception>
         public static string GetFileName(string path)
         {
-            if (!Path.HasExtension(path))
+            var uri = new Uri(path);
+            if (!Path.HasExtension(uri.LocalPath))
             {
                 throw new ArgumentException($"{nameof(path)} doesn't contain a file");
             }
@@ -30,6 +32,7 @@ namespace AUrlHelper
         /// <param name="path"></param>
         /// <returns>File name</returns>
         /// <exception cref="ArgumentException">Throw if path doesn't contain a file</exception>
+        /// <exception cref="UriFormatException">Throw if path is not a url</exception>
         public static string GetFileNameWithoutExtension(string path)
         {
             var fileName = GetFileName(path);
@@ -42,9 +45,11 @@ namespace AUrlHelper
         /// </summary>
         /// <param name="path"></param>
         /// <returns>Folder name</returns>
+        /// <exception cref="UriFormatException">Throw if path is not a url</exception>
         public static string GetFolderName(string path)
         {
-            if (Path.HasExtension(path))
+            var uri = new Uri(path);
+            if (Path.HasExtension(uri.LocalPath))
             {
                 var fileName = GetFileName(path);
                 path = path.Replace($"{Delimeter}{fileName}", string.Empty);

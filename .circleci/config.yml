@@ -1,0 +1,22 @@
+version: 2
+jobs:
+    build:
+        steps:
+            - checkout
+            - run:
+                name: Restore
+                command: dotnet restore --no-cache
+            - run:
+                name: Build
+                command: dotnet build --configuration Release --no-restore
+            - run:
+                name: Test
+                command: dotnet test
+workflows:
+    version: 2
+    workflow:
+        jobs:
+        - build:
+            filters:
+                branches:
+                    only: master

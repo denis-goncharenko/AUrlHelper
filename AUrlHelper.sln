@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AUrlHelper", "AUrlHelper.csproj", "{1CFF50EB-2E41-420B-868F-6DA1DE4B0041}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AUrlHelper", "AUrlHelper\AUrlHelper.csproj", "{AF73FCA5-7873-4007-92C2-9F76B4F15A70}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AUrlHelper.Tests", "AUrlHelper.Tests\AUrlHelper.Tests.csproj", "{CAE13E26-16BC-45D8-8C85-3153B93C289A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1CFF50EB-2E41-420B-868F-6DA1DE4B0041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1CFF50EB-2E41-420B-868F-6DA1DE4B0041}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1CFF50EB-2E41-420B-868F-6DA1DE4B0041}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1CFF50EB-2E41-420B-868F-6DA1DE4B0041}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF73FCA5-7873-4007-92C2-9F76B4F15A70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF73FCA5-7873-4007-92C2-9F76B4F15A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF73FCA5-7873-4007-92C2-9F76B4F15A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF73FCA5-7873-4007-92C2-9F76B4F15A70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAE13E26-16BC-45D8-8C85-3153B93C289A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAE13E26-16BC-45D8-8C85-3153B93C289A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAE13E26-16BC-45D8-8C85-3153B93C289A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAE13E26-16BC-45D8-8C85-3153B93C289A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
