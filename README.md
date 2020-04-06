@@ -1,4 +1,4 @@
-# AUrlHelper
+# AUrlHelper [![CircleCI](https://circleci.com/gh/denis-goncharenko/AUrlHelper.svg?style=svg)](https://circleci.com/gh/denis-goncharenko/AUrlHelper)
 
 The AUrlHelper is a [Nuget Package](https://www.nuget.org/packages/AUrlHelper) for getting file name or folder name from the url when you work with cloud storages like S3, Dropbox, GoogleDrive or Azure Blob Storage.
 
