@@ -4,16 +4,16 @@ orbs:
 jobs:
     build:
         docker:
-            - image: mcr.microsoft.com/dotnet/core/sdk:2.2
+            - image: denisgoncharenko/ubuntu-with-dotnet-packages
         steps:
             - checkout
-            - sonarcloud/scan
             - run:
                 name: Restore
                 command: dotnet restore --no-cache
             - run:
                 name: Build
                 command: dotnet build --configuration Release --no-restore
+            - sonarcloud/scan
             - run:
                 name: Test
                 command: dotnet test
