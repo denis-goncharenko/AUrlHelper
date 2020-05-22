@@ -1,9 +1,8 @@
-version: 2.1
-
+version: 2
 jobs:
     build:
         docker:
-            - image: denisgoncharenko/ubuntu-with-dotnet-packages
+            - image: mcr.microsoft.com/dotnet/core/sdk:2.2
         steps:
             - checkout
             - run:
@@ -15,10 +14,8 @@ jobs:
             - run:
                 name: Test
                 command: dotnet test
-            - sonarcloud/scan
-orbs:
-    sonarcloud: sonarsource/sonarcloud@1.0.1
 workflows:
+    version: 2
     workflow:
         jobs:
         - build:
